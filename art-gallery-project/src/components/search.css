@@ -1,0 +1,40 @@
+/*-----------------------------------------------
+               Pantone
+         *Header : #F7D1CD
+         *button : #EFCDDC
+         *fonts  : #7F3B4E
+         *comp   : #877161
+         *dark   : #4E3C2A
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+               Navigation Search
+-----------------------------------------------*/
+
+.search--style {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+.search_style--input {
+  background-color: #EFCDDC;
+  border-color: none;
+  padding: 4px;
+}
+
+.search_style--button {
+    background-color: #EFCDDC;
+    border-radius: 20px;
+    color: #7F3B4E;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 6px;
+    width: 80px;
+  }
+
+.search_style--button:hover {
+  background-color: #7F3B4E;
+  color: #EFCDDC;
+}
