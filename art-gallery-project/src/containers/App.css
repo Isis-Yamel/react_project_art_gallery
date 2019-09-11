@@ -1,6 +1,6 @@
 /*-----------------------------------------------
                Pantone
-         *Header : #F7D1CD #7F3B4E #00d4ff
+         *Header : #D0DDE6 #E4C9CD #CE8886
          *button : #EFCDDC
          *fonts  : #7F3B4E
          *comp   : #877161
@@ -24,8 +24,8 @@
 }
 
 .header_style--back {
-  background: rgb(247,209,205);
-  background: linear-gradient(90deg, rgba(247,209,205,1) 0%, rgba(127,59,78,1) 35%, rgba(0,212,255,1) 100%);
+  background: rgb(208,221,230);
+  background: linear-gradient(90deg, rgba(208,221,230,1) 0%, rgba(228,201,205,1) 51%, rgba(206,136,134,1) 100%);
   color: white;
   font-family: 'Barlow Condensed', sans-serif;
   height: 70px;

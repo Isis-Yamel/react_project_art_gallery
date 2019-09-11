@@ -1,6 +1,5 @@
 /*-----------------------------------------------
                Pantone
-         *Header : #F7D1CD
          *button : #EFCDDC
          *fonts  : #7F3B4E
          *comp   : #877161
@@ -26,7 +25,7 @@
 .search_style--button {
     background-color: #EFCDDC;
     border-radius: 20px;
-    color: #7F3B4E;
+    color: #9E4D4C;
     font-weight: bold;
     cursor: pointer;
     margin-left: 10px;
@@ -35,6 +34,6 @@
   }
 
 .search_style--button:hover {
-  background-color: #7F3B4E;
+  background-color: #9E4D4C;
   color: #EFCDDC;
 }
