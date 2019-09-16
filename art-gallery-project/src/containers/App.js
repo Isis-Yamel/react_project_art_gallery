@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className='header'>
-        <div className='header_style--back'>
-          <img src={Canvas} className='header_style--logo' alt="logo" />
+        <div className='header_style--back background_style'>
+          <img src={Canvas} className='header_style--logo' alt="canvas logo" />
         </div>
         <Search/>
       </div>
