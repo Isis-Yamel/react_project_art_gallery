@@ -14,9 +14,12 @@
 /* ----- navigation bar ----- */
 
 .information--style {
+    align-items: center;
     background-color: #E4C9CD;
     border-radius: 4px;
     color: black;
+    display: flex;
+    flex-flow: column;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     padding: 10px;
@@ -28,5 +31,24 @@
     color: black;
     font-style: oblique;
     font-weight: bold;
-    padding: 4px;
+    padding: 14px;
+    text-align: center;
+}
+
+.information_text--style {
+    padding: 12px;
+}
+
+.information_button--style {
+    background-color: #9E4D4C;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 30%;
+}
+
+.information_button--style:hover {
+    background-color: white;
+    color: #9E4D4C;
 }

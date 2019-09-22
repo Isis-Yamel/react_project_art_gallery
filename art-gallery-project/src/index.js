@@ -5,8 +5,8 @@ import './index.css';
 
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import fetchReducer from './store/reducers/Fetch';
-import factsReducer from './store/reducers/Facts';
+import fetchReducer from './store/reducers/fetchReducer';
+import factsReducer from './store/reducers/factsReducer';
 
 const rootReducer = combineReducers({
   fetchData: fetchReducer,

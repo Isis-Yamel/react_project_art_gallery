@@ -27,7 +27,7 @@ class Search extends Component {
     }
 
     render () {
-        console.log(actions);
+        console.log(this.props.data);
         return (
             <section className='search--style'>
                 <input label='search' placeholder='Search here!' className='search_style--input' name='nav-search' type='text'/>
