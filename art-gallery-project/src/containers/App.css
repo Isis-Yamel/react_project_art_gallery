@@ -10,6 +10,9 @@
 /*-----------------------------------------------
                Header Styles
 -----------------------------------------------*/
+body {
+  background-color: #ECECEC;
+}
 .header {
   text-align: center;
 }
@@ -26,7 +29,6 @@
 .header_style--back {
   color: white;
   font-family: 'Barlow Condensed', sans-serif;
-  height: 70px;
   margin-top: 20px;
   padding: 20px;
 }

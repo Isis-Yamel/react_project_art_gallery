@@ -3,10 +3,10 @@ import './search.css';
 
 const search = () => {
     return (
-        <div className='search--style'>
-            <input placeholder='Search here!' className='search_style--input' name='nav-search' type='text'/>
+        <section className='search--style'>
+            <input label='search' placeholder='Search here!' className='search_style--input' name='nav-search' type='text'/>
             <button className='search_style--button'>Search</button>
-        </div>
+        </section>
     );
 };
 

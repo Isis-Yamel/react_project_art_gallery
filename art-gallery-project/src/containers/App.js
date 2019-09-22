@@ -1,44 +1,30 @@
-import React, { Component } from 'react';
-import Canvas from '../assets/canvas.png'
+import React, { Component, Fragment } from 'react';
+import Logo from '../assets/logo.png'
 import './App.css';
-import Search from '../components/search/search';
-import SearchCanvas from '../components/canvas/canvas'
+import Canvas from './canvas/canvas'
+import { BrowserRouter } from 'react-router-dom';
+import NavBar from './navBar/navbar';
 
 class App extends Component {
 
-  state = {
-    canvasData: {}
-  }
-
-  componentDidMount() {
-    this.searchCanvas();
-  }
-
-  searchCanvas = () => {
-      fetch('https://collectionapi.metmuseum.org/public/collection/v1/objects/2211')
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        this.setState({
-          canvasData: data
-        });
-        let output = '<h2>Canvas</h2>'
-        //  {data.primaryImageSmall}//{data.title}//{data.primaryImageSmall}//{data.creditLine}
-      })
-  }
-
-
   render() {
     return (
-      <div className='header'>
-        <div className='header_style--back background_style'>
-          <img src={Canvas} className='header_style--logo' alt="canvas logo" />
-        </div>
-        <Search/>
-        <SearchCanvas
-          data={this.state.canvasData}
-        />
-      </div>
+      <BrowserRouter basename='/'>
+        <Fragment>
+          <header className='header header_style--back'>
+            <div className='background_style'>
+              <img src={Logo} className='header_style--logo' alt="canvas logo" />
+            </div>
+            <NavBar/>
+          </header>
+          <main>
+            <Canvas/>
+          </main>
+          <footer>
+            <p>All rights reserved</p>
+          </footer>
+        </Fragment>
+      </BrowserRouter>
     );
   }
 }

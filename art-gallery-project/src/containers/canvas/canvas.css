@@ -1,0 +1,55 @@
+/*-----------------------------------------------
+               Pantone
+         *button : #EFCDDC
+         *fonts  : #7F3B4E
+         *icons  : #9E4D4C
+
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+               Canvas Style
+-----------------------------------------------*/
+/* ----- Wrapper ----- */
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper-card--style {
+    background-color: white;
+    border-radius: 20px;
+    height: 550px;
+    margin: 10px;
+    width: 280px;
+}
+
+/* ----- Image ----- */
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 60%;
+}
+
+.imageStyle {
+    height: 90%;
+    padding-top: 14px;
+}
+
+/* ----- Information ----- */
+
+.info {
+    background-color: #7F3B4E;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #EDDCDF;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.info--scroll {
+    height: 30%;
+    overflow-y: scroll;
+    resize: none;
+}

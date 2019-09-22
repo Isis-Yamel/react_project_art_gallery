@@ -11,9 +11,22 @@
 -----------------------------------------------*/
 
 .icon {
-    display: flex;
-    justify-content: space-around;
-    width: 200px;
-    margin: 10px auto;
     color: #9E4D4C;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 200px;
+}
+
+.icon--hov:hover {
+    color: #EFCDDC;
+    transition: 0.2s linear;
+    transform: scale(1.5);
+}
+
+ul.icon {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 10px;
 }
