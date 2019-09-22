@@ -34,6 +34,6 @@ body {
 }
 
 .background_style {
-  background: rgb(208,221,230);
   background: linear-gradient(90deg, rgba(208,221,230,1) 0%, rgba(228,201,205,1) 51%, rgba(206,136,134,1) 100%);
+  padding: 10px;
 }
