@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../store/actions';
+import * as actions from '../../store/reducers/actions/index';
 import Canvas from '../../components/canvas/canvas';
 import './search.css';
 
 class Search extends Component {
 
     state = {
-        clicked: false
+        clicked: false,
+        inputFromUser: ''
     }
+
+    storeInputFromUser = event => {
+        this.setState({
+            inputFromUser: event.target.value
+        })
+    };
 
     toggleCanvas = () => {
         this.setState({
@@ -27,11 +34,10 @@ class Search extends Component {
     }
 
     render () {
-        console.log(this.props.data);
         return (
             <section className='search--style'>
-                <input label='search' placeholder='Search here!' className='search_style--input' name='nav-search' type='text'/>
-                <button className='search_style--button' onClick={this.props.OnSearch}>Search</button>
+                <input onChange={event => this.storestoreInputFromUser(event)} label='search' placeholder='Search here!' className='search_style--input' name='nav-search' type='text'/>
+                <button className='search_style--button' onClick={this.props.fetchData.bind(this, this.state.InputFromUser)}>Search</button>
                 <div>
                    {this.renderCanvas()}
                 </div>
@@ -48,7 +54,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        OnSearch: () => dispatch({type: actions.FETCH})
+        fetchData: event => dispatch(actions.fetchData(event))
     };
 };
 

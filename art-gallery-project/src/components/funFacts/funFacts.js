@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import * as actions from '../../store/actions';
+import * as actions from '../../store/reducers/actions/actions';
 import React, { Component } from 'react';
 import './funFacts.css';
 
