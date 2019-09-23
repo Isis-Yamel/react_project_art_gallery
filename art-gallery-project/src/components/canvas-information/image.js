@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from '../../assets/logo.png';
 
 const image = props => {
     return (
         <figure className='image'>
-            <img className='image--style' src={'https://collectionapi.metmuseum.org/public/collection/v1/objects/1321'} alt={'canvas image ma fren'}/>
+            <img className='image--style' src={props.image || {Image}} alt={props.alternative}/>
         </figure>
     );
 };
