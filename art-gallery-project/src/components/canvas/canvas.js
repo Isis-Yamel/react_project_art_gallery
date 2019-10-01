@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import CanvasCard from '../../containers/canvasCard/canvasCard';
+import CanvasCard from '../../containers/canvas-card/canvasCard';
 import './canvas.css';
 
 class Canvas extends Component {

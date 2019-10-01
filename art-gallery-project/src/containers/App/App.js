@@ -1,9 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
-import FunFacts from '../components/funFacts/funFacts';
-import Search from '../containers/search/search';
-import Logo from '../assets/logo.png'
-import NavBar from './navBar/navbar';
+import FunFacts from '../../components/fun-facts/funFacts';
+import Search from '../search/search';
+import Logo from '../../assets/logo.png'
+import NavBar from '../nav-bar/navbar';
 import React, { Component, Fragment } from 'react';
 import './App.css';
 

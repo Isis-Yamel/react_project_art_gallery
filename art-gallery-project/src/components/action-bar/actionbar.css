@@ -21,6 +21,7 @@
 
 .icon--hov:hover {
     color: #EFCDDC;
+    cursor: pointer;
     transition: 0.2s linear;
     transform: scale(1.5);
 }

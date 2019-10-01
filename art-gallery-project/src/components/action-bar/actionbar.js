@@ -1,7 +1,7 @@
 import React from 'react';
 import './actionbar.css';
 
-const icons = () => {
+const actionBar = () => {
     const icons = [
         'fas fa-heart icon--hov',
         'fas fa-share-alt icon--hov',
@@ -26,4 +26,4 @@ const icons = () => {
     );
 };
 
-export default icons;
+export default actionBar;
