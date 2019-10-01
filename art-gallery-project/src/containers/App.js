@@ -27,7 +27,7 @@ class App extends Component {
             </Switch>
           </main>
           <footer>
-            <p>All rights reserved (Isis was here!)</p>
+            <p className='footer_style'>All rights reserved (Isis was here!)</p>
           </footer>
         </Fragment>
       </BrowserRouter>

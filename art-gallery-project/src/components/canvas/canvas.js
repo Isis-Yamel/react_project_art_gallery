@@ -1,13 +1,14 @@
-import React, { PureComponent } from 'react';
+import React, { Component, Fragment } from 'react';
 import CanvasCard from '../../containers/canvasCard/canvasCard';
 import './canvas.css';
 
-class Canvas extends PureComponent {
+class Canvas extends Component {
 
     canvasCardRender = props => {
-        return props.data.map((data) => {
+        console.log(this.props)
+        return props.data.map((data, index) => {
             return <CanvasCard
-                key={data.objectId}
+                key={index}
                 image={data.primaryImageSmall}
                 title={data.title}
                 artwork={data.medium}
@@ -18,11 +19,9 @@ class Canvas extends PureComponent {
 
     render (){
         return (
-            <section className='wrapper'>
-                <article className='wrapper-card--style'>
-                    {this.canvasCardRender(this.props)}
-                </article>
-            </section>
+            <Fragment>
+                {this.canvasCardRender(this.props)}
+            </Fragment>
         );
     };
 };

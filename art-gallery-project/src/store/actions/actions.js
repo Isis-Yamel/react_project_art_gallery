@@ -1,4 +1,4 @@
-import * as actionTypes from './actions';
+import * as actionTypes from './types';
 
 export function fetchData(event) {
     return dispatch => {
@@ -8,7 +8,7 @@ export function fetchData(event) {
             let CanvasData = [];
 
             res.objectIDs.map((element, index) => {
-               if (index <= 9) {
+               if (index <= 11) {
                    fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${element}`)
                    .then((res) => res.json())
                    .then((data) => {
@@ -17,7 +17,9 @@ export function fetchData(event) {
                }
            });
 
-           dispatch(addData(CanvasData));
+           setTimeout(() => {
+            dispatch(addData(CanvasData));
+           }, 2000);
         });
       };
 };

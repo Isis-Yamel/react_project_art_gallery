@@ -37,3 +37,14 @@ body {
   background: linear-gradient(90deg, rgba(208,221,230,1) 0%, rgba(228,201,205,1) 51%, rgba(206,136,134,1) 100%);
   padding: 10px;
 }
+
+/*-----------------------------------------------
+               Footer Styles
+-----------------------------------------------*/
+
+.footer_style {
+  font-style: oblique;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+}

@@ -4,8 +4,8 @@ const information = props => {
     return (
         <div className='info info--scroll'>
             <h2>{props.title || 'Canvas' }</h2>
-            <p>{props.medium || 'drybrush, washing, splatering, dabbing'}</p>
-            <p>{props.artwork || 'There is a lot of things but I do not know'}</p>
+            <p><b>Credit:</b> {props.credit || 'drybrush, washing, splatering, dabbing'}</p>
+            <p><b>Artwork:</b> {props.artwork || 'There is a lot of things but I do not know'}</p>
         </div>
     );
 };

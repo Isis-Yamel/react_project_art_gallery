@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../store/reducers/actions/index';
+import { fetchData } from '../../store/actions/actions';
 import Canvas from '../../components/canvas/canvas';
 import './search.css';
 
@@ -23,7 +23,7 @@ class Search extends Component {
                     <input onChange={event => this.storeInputFromUser(event)} label='search' placeholder='Search here!' className='search_style--input' name='nav-search' type='text'/>
                     <button className='search_style--button' onClick={this.props.fetchData.bind(this, this.state.inputFromUser)}>Search</button>
                 </section>
-                <section>
+                <section className='canvas_wrapper'>
                     <Canvas data={this.props.data}/>
                 </section>
             </Fragment>
@@ -37,10 +37,6 @@ const mapStateToProps = state => {
     };
 };
 
-const mapDispatchToProps = dispatch => {
-    return {
-        fetchData: event => dispatch(actions.fetchData(event))
-    };
-};
+const mapDispatchToProps = { fetchData }
 
 export default connect(mapStateToProps, mapDispatchToProps) (Search);

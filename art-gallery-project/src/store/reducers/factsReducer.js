@@ -1,5 +1,5 @@
-import * as actions from './actions/actions';
-import * as factData from '../data/factData';
+import * as actions from '../actions/types';
+import * as factData from '../utility/factData';
 
 const initialState = {
   funData: []
