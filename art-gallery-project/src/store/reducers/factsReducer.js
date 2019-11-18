@@ -18,7 +18,7 @@ const randomFact = (state) => {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-   case actions.FUN_FACT:
+   case actions.GET_FACT:
        return randomFact(state);
    default:
        return state;

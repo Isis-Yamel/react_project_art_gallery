@@ -26,7 +26,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        OnClicked: () => dispatch({type: actions.FUN_FACT})
+        OnClicked: () => dispatch({type: actions.GET_FACT})
     };
 };
 

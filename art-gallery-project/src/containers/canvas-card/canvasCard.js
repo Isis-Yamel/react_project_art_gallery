@@ -9,7 +9,10 @@ const canvasCard = props => {
             <Image
                 image={props.image}
                 alternative={props.artwork}/>
-            <ActionBar/>
+            <ActionBar
+                addFavoriteHandler={props.addFavoriteHandler}
+                identifier={props.identifier}
+            />
             <Information
                 title={props.title}
                 artwork={props.artwork}

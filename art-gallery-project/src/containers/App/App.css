@@ -17,24 +17,10 @@ body {
   text-align: center;
 }
 
-.header_style--logo {
-  height: 60px;
-}
-
-.header_style--logo:hover {
-  transition: 0.2s linear;
-  transform: scale(1.0);
-}
-
-.header_style--back {
+.head_style {
+  background-color: #7F3B4E;
   color: white;
-  font-family: 'Barlow Condensed', sans-serif;
-  margin-top: 20px;
-  padding: 20px;
-}
-
-.background_style {
-  background: linear-gradient(90deg, rgba(208,221,230,1) 0%, rgba(228,201,205,1) 51%, rgba(206,136,134,1) 100%);
+  font-family: 'Libre Caslon Text', serif;
   padding: 10px;
 }
 

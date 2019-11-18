@@ -10,24 +10,30 @@
                Icons section
 -----------------------------------------------*/
 
-.icon {
-    color: #9E4D4C;
-    display: flex;
-    font-size: 24px;
-    justify-content: space-around;
-    margin: 10px auto;
-    width: 200px;
+.bar--align {
+    text-align: center;
 }
 
-.icon--hov:hover {
+.bar_style {
+    color: #9E4D4C;
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+.bar_style--hov:hover {
     color: #EFCDDC;
     cursor: pointer;
     transition: 0.2s linear;
     transform: scale(1.5);
 }
 
-ul.icon {
-    list-style: none;
-    padding-bottom: 10px;
-    padding: 0;
+.bar_style:visited {
+    color: #EFCDDC;
+}
+
+button.bar_style {
+    background-color: transparent;
+    border: 0;
+    padding: 0 4px;
+    width: 50px;
 }

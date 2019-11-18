@@ -5,7 +5,6 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  console.log(action.canvasData);
   switch (action.type) {
    case actionType.ADD_DATA:
        return {

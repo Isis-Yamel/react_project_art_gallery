@@ -28,6 +28,7 @@
 
 .nav li {
     display: inline-block;
+    font-weight: bold;
     margin: 20px;
 }
 
@@ -39,5 +40,5 @@
 .nav a:hover,
 .nav a:active,
 .nav a.active {
-    color: #fa923f;
+    color: #2574A9;
 }

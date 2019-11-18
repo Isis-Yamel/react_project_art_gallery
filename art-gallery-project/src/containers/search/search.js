@@ -10,6 +10,15 @@ class Search extends Component {
         inputFromUser: ''
     }
 
+    addFavoriteHandler = (event, key) => {
+        const favorite = this.props.data.filter( e => {
+            return e.objectID === key;
+        });
+
+        console.log(favorite);
+        console.log(event, key);
+    }
+
     storeInputFromUser = event => {
         this.setState({
             inputFromUser: event.target.value
@@ -24,7 +33,9 @@ class Search extends Component {
                     <button className='search_style--button' onClick={this.props.fetchData.bind(this, this.state.inputFromUser)}>Search</button>
                 </section>
                 <section className='canvas_wrapper'>
-                    <Canvas data={this.props.data}/>
+                    <Canvas
+                        data={this.props.data}
+                        addFavoriteHandler={this.addFavoriteHandler}/>
                 </section>
             </Fragment>
         );

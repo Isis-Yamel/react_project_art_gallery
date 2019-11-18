@@ -1,28 +1,20 @@
 import React from 'react';
 import './actionbar.css';
 
-const actionBar = () => {
-    const icons = [
-        'fas fa-heart icon--hov',
-        'fas fa-share-alt icon--hov',
-        'fas fa-feather icon--hov',
-        'fab fa-trello icon--hov'
-    ];
-
-    const renderIcon = () => {
-        return icons.map ((icon, index) => {
-            return (
-                <li key={index}>
-                    <i className={icon}></i>
-                </li>
-            );
-        });
-    };
+const actionBar = props => {
 
     return (
-        <ul className='icon'>
-            {renderIcon()}
-        </ul>
+        <div className='bar--align'>
+            <button onClick={(event) => props.addFavoriteHandler(event, props.identifier)} className='bar_style'>
+                <i className='fas fa-heart bar_style--hov'></i>
+            </button>
+            <button className='bar_style'>
+                <i className='fas fa-share-alt bar_style--hov'></i>
+            </button>
+            <button className='bar_style'>
+                <i className='fas fa-feather bar_style--hov'></i>
+            </button>
+        </div>
     );
 };
 
