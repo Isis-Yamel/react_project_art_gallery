@@ -1,7 +1,7 @@
 import React from 'react';
-import ActionBar from '../../components/action-bar/actionbar';
-import Image from '../../components/canvas-information/image';
-import Information from '../../components/canvas-information/information';
+import ActionBar from '.././components/action-bar';
+import Image from '../components/canvas-information/image';
+import Information from '../components/canvas-information/information';
 
 const canvasCard = props => {
     return (

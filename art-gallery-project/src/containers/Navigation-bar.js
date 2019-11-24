@@ -1,8 +1,8 @@
-import { NavLink } from 'react-router-dom';
 import React, { Fragment } from 'react';
-import './navbar.css';
+import { NavLink } from 'react-router-dom';
+import '../css/Navigation-bar.css';
 
-const navBar = () => {
+const NavigationBar = () => {
     return (
         <Fragment>
             <nav className='nav'>
@@ -22,4 +22,4 @@ const navBar = () => {
     );
 };
 
-export default navBar;
+export default NavigationBar;

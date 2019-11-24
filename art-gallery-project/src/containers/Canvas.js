@@ -1,6 +1,6 @@
+import CanvasCard from './Canvas-card';
 import React, { Fragment } from 'react';
-import CanvasCard from '../../containers/canvas-card/canvasCard';
-import './canvas.css';
+import '../css/Canvas.css';
 
 const Canvas = props => {
 

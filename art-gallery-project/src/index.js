@@ -1,13 +1,14 @@
+import App from './containers/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App/App';
-import './index.css';
 
+import factsReducer from './store/reducers/facts-reducer';
+import fetchReducer from './store/reducers/fetch-reducer';
+import thunk from 'redux-thunk';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
-import fetchReducer from './store/reducers/fetchReducer';
-import factsReducer from './store/reducers/factsReducer';
+
+import './index.css';
 
 const rootReducer = combineReducers({
   fetchData: fetchReducer,

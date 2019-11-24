@@ -1,5 +1,5 @@
 import React from 'react';
-import './actionbar.css';
+import '../css/action-bar.css';
 
 const actionBar = props => {
 

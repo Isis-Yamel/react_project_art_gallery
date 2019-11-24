@@ -1,9 +1,9 @@
+import FunFacts from '.././components/fun-facts';
+import NavigationBar from './Navigation-bar';
+import React, { Component, Fragment } from 'react';
+import Search from './Search';
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
-import FunFacts from '../../components/fun-facts/funFacts';
-import Search from '../search/search';
-import NavBar from '../nav-bar/navbar';
-import React, { Component, Fragment } from 'react';
 import './App.css';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
         <Fragment>
           <header className='header'>
             <h1 className='head_style'>The Met</h1>
-            <NavBar/>
+            <NavigationBar/>
           </header>
           <main>
             <Switch>
