@@ -4,25 +4,16 @@ const initialState = {
   favorites: []
 };
 
-const getFavorite = (id) => {
-    const canvasFavorite = state.favorites.filter(canvas => {
-        return canvas.id === id;
-    });
-
-    return canvasFavorite;
-};
-
-const addFavorite = state => {
-    return {
-        ...state.favorites,
-        getFavorite()
-    };
-};
-
 const reducer = (state = initialState, action) => {
   switch (action.type) {
    case actions.ADD_FAVORITE:
-       return addFavorite(state);
+       console.log(action.favorite);
+       console.log(state);
+
+       return {
+           ...state.favorites,
+           favorites: [...state.favorites, action.favorites]
+       }
    default:
        return state;
   };

@@ -30,3 +30,10 @@ export function addData(data) {
         canvasData: data
     };
 };
+
+export function addFavorite (data) {
+    return {
+        type: actionTypes.ADD_FAVORITE,
+        favorites: data
+    };
+};

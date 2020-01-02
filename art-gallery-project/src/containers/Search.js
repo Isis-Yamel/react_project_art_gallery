@@ -1,7 +1,7 @@
 import Canvas from '.././containers/Canvas';
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { fetchData } from '../store/actions/actions';
+import { fetchData, addFavorite } from '../store/actions/actions';
 import '../css/Search.css';
 
 class Search extends Component {
@@ -14,6 +14,8 @@ class Search extends Component {
         const favorite = this.props.data.filter( e => {
             return e.objectID === key;
         });
+
+        this.props.addFavorite(favorite[0]);
     }
 
     storeInputFromUser = event => {
@@ -52,6 +54,6 @@ const mapStateToProps = state => {
     };
 };
 
-const mapDispatchToProps = { fetchData }
+const mapDispatchToProps = { addFavorite, fetchData };
 
 export default connect(mapStateToProps, mapDispatchToProps) (Search);

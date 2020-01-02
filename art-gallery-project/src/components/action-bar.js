@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/action-bar.css';
 
-const actionBar = props => {
+const ActionBar = props => {
 
     return (
         <div className='bar--align'>
@@ -18,4 +18,4 @@ const actionBar = props => {
     );
 };
 
-export default actionBar;
+export default ActionBar;
